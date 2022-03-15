@@ -24,7 +24,7 @@ Route::get('/about', function () {
         "title" => "About",
         "nama" => "Mellafesa Rofida",
         "email" => "mellafesarofida@gmail.com",
-        "gambar" => "photo raport mella.png"  
+        "gambar" => "photo raport mella.png"
     ]);
 });
 Route::get('/gallery', function () {
@@ -32,13 +32,8 @@ Route::get('/gallery', function () {
         "title" => "Gallery"
     ]);
 });
-Route::resource('/contacts', ContactController::class);
-
+Route::resource('/contact', ContactController::class);
 Auth::routes();
-
 Route::group(['middleware' => ['auth']], function () {
-    Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home'); 
+    route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 });
-
-
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
