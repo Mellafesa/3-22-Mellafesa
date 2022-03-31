@@ -4,7 +4,7 @@
 <div class="title-top mb-5">
     <h2 class="fw-bold">Contact Us</h2>
 </div>
-<form method = "POST" action="{{ route('contact.store')}}">
+<form method = "POST" action="{{ route('contacts.store')}}">
     {{csrf_field()}}
     <div class="mb-3">
         <label for="inputnama">Nama</label>

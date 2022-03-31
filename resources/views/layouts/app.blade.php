@@ -20,15 +20,15 @@
 
         <!-- MENU SIDEBAR-->
                 <!-- HEADER MOBILE-->
-                @include('partials/headermobile');
+                @include('partials\header-mobile');
                 <!-- END HEADER MOBILE-->
-        @include('partials/sidebar');
+        @include('partials\sidebar');
         <!-- END MENU SIDEBAR-->
 
         <!-- PAGE CONTAINER-->
         <div class="page-container">
             <!-- HEADER DESKTOP-->
-            @include('partials/header');
+            @include('partials\header');
             <!-- HEADER DESKTOP-->
 
             <!-- MAIN CONTENT-->
